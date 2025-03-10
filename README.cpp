@@ -1,5 +1,15 @@
-while (true){
-  muslim::solat, puasa, zakat;
-  if (muslim::die);
-  break;
-  }
+int main() {
+    Muslim muslim;
+    
+    while (true) {
+        muslim.solat();
+        muslim.puasa();
+        muslim.zakat();
+        
+        if (muslim.die()) {
+            break;
+        }
+    }
+    
+    return 0;
+}
